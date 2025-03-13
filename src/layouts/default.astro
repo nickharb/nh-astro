@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/styles/variables.css" />
+    <link rel="stylesheet" href="/src/styles/reset.css" />
+    <link rel="stylesheet" href="/src/styles/core.css" />
+    <link rel="stylesheet" href="/src/styles/typography.css" />
+    <link rel="stylesheet" href="/src/styles/layout.css" />
+
+    <meta name="generator" content={Astro.generator} />
+    <title>Nick Harbaugh</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <a href="/" rel="home" class="logo">
+        <img src="/src/assets/nh-logo-sm.png" alt="A pixellated eclipse" />
+        <span>Nick Harbaugh</span>
+      </a>
+
+      <nav class="main-nav">
+        <ul>
+          <li><a href="/work" rel="work">Work</a></li>
+          <li><a href="/about" rel="about">About</a></li>
+          <li><a href="/resume" rel="resume">CV</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <slot />
+    </div>
+
+    <footer class="site-footer">
+      <hr>
+      <p>
+        Copyright © {new Date().getFullYear()} Nick Harbaugh<span>&nbsp;| All Rights Reserved</span
+        >
+      </p>
+      <p>📧 <a href="mailto:njharb@gmail.com">njharb@gmail.com</a></p>
+    </footer>
+  </body>
+</html>
+
+<style>
+  .site-header {
+    padding: var(--space_gutter);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    font-size: var(--font_size--medium);
+    font-weight: var(--font_weight--semibold);
+    color: var(--color_text--default);
+    text-transform: uppercase;
+    transition: color 500ms;
+  }
+
+  .logo:hover {
+    color: var(--color_text--subtle);
+    text-decoration: none;
+  }
+
+  .logo span {
+    display: none;
+  }
+
+  .logo img {
+    width: 4rem;
+  }
+
+  .main-nav {
+    font-size: var(--font_size--medium);
+  }
+
+  .main-nav ul {
+    display: flex;
+    gap: 0.8rem;
+    list-style: none;
+  }
+
+  .main-nav a {
+    transition: color 250ms;
+  }
+
+  .main-nav a:hover {
+    color: var(--color_text--link-alt);
+    text-decoration: none;
+  }
+
+  .container {
+    max-width: var(--width_content);
+    margin: 0 auto;
+    padding: 0 var(--space_gutter);
+  }
+
+  .site-footer {
+    padding: var(--space_gutter);
+    font-size: var(--font_size--small);
+    margin-top: var(--space_section);
+  }
+
+  .site-footer hr {
+    width: 100%;
+    margin: 0 0 1rem;
+  }
+
+  .site-footer span {
+    display: none;
+  }
+
+  @media (min-width: 30rem) {
+    .main-nav {
+      padding: var(--space_gutter);
+    }
+
+    .container {
+      padding: 0 var(--space_flow);
+    }
+
+    .site-footer {
+      padding: var(--space_section) var(--space_flow) var(--space_gutter);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  }
+
+  @media (min-width: 40rem) {
+    .logo span {
+      display: block;
+    }
+  }
+
+  @media (min-width: 50rem) {
+    .site-footer span {
+      display: inline-block;
+    }
+  }
+
+  @media (min-width: 60rem) {
+    .container {
+      padding: 0 var(--space_gutter);
+    }
+
+    .site-footer {
+      padding: var(--space_section) var(--space_flow) var(--space_gutter);
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+</style>

@@ -1,0 +1,140 @@
+/* ================================================================= */
+/* Typography
+/* ================================================================= */
+
+/* Heading typography */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--font_head);
+  font-weight: var(--font_weight--bold);
+}
+
+h1 {
+  font-size: var(--font_size--xxxlarge);
+  line-height: var(--font_height--xxxlarge);
+  margin: var(--space_section) 0 var(--space_flow);
+}
+
+h2 {
+  font-size: var(--font_size--xlarge);
+  line-height: var(--font_height--xlarge);
+  margin: var(--space_flow) 0 var(--space_gutter);
+}
+
+h3 {
+  font-size: var(--font_size--medium);
+  line-height: var(--font_height--medium);
+  margin: var(--space_flow) 0 var(--space_gutter);
+}
+
+h4 {
+  font-size: var(--font_size--normal);
+  line-height: var(--font_height--normal);
+}
+
+h5 {
+  font-size: var(--font_size--normal);
+  line-height: var(--font_height--normal);
+}
+
+/* Set typography for small text */
+
+small {
+  font-size: var(--font_size--small);
+  line-height: var(--font_height--small);
+}
+
+/* Basic styles for inline semantics */
+
+strong,
+b {
+  font-weight: bold;
+}
+em,
+cite,
+i,
+q {
+  font-style: italic;
+}
+s {
+  text-decoration: line-through;
+}
+u {
+  text-decoration: underline;
+  font-style: normal;
+}
+
+a {
+  color: var(--color_text--link);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:visited {
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+  text-decoration-color: var(--color_text--link-alt);
+  text-decoration-thickness: 2px;
+}
+
+blockquote {
+  border-left: 5px solid var(--color_accent);
+  padding: var(--space_2) var(--space_4);
+  font-weight: var(--font_weight--semibold);
+}
+
+blockquote footer,
+blockquote cite {
+  font-size: var(--font_size--small);
+  line-height: var(--font_height--small);
+  font-weight: var(--font_weight--normal);
+}
+
+blockquote cite {
+  font-style: italic;
+}
+
+blockquote > cite,
+blockquote > footer {
+  display: block;
+  margin-block-start: calc(var(--space_flow) / 2);
+}
+
+/* Set nested unordered list styles */
+
+ul {
+  list-style-type: disc;
+}
+ul ul {
+  list-style-type: circle;
+}
+ul ul ul {
+  list-style-type: square;
+}
+
+/* Set nested ordered list styles */
+
+ol {
+  list-style-type: decimal;
+}
+ol ol {
+  list-style-type: upper-alpha;
+}
+ol ol ol {
+  list-style-type: lower-roman;
+}
+
+/* Set list indent */
+
+ol li,
+ul li {
+  margin-block-end: var(--space_1);
+  margin-inline-start: var(--space_2);
+}

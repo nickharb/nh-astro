@@ -1,0 +1,173 @@
+/* ================================================================= */
+/* Core
+/* ================================================================= */
+
+/* Set the document's default font, color, size, and line height */
+
+body {
+  font-family: var(--font_body);
+  font-size: var(--font_size--normal);
+  line-height: var(--font_height--normal);
+  color: var(--color_text--default);
+  background: var(--color_background--surface);
+  accent-color: var(--color_accent);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+::selection {
+  background-color: var(--color-primary-100);
+}
+
+/* Use primary color for focus styles */
+
+:focus-visible {
+  outline-color: var(--color_accent);
+  outline-offset: 3px;
+  outline-width: 2px;
+}
+
+/* Allow media to sit correctly in content flow */
+
+img,
+figure,
+.aspect-ratio,
+.embed-wrapper {
+  display: block;
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+/* Basic style for figcaption */
+
+figcaption {
+  display: block;
+  font-style: italic;
+}
+
+/* Setup media wrappers */
+
+.aspect-ratio,
+.embed-wrapper {
+  --aspect-ratio: 16/9;
+  width: 100%;
+  padding-block-start: calc(100% / (var(--aspect-ratio)));
+  position: relative;
+}
+
+/* Position inner elements in media wrappers */
+
+.embed-wrapper > iframe,
+.embed-wrapper > embed,
+.embed-wrapper > object,
+.aspect-ratio > iframe,
+.aspect-ratio > embed,
+.aspect-ratio > object,
+.aspect-ratio > img {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+}
+
+/* Allow img to crop to avoid being stretched */
+
+.aspect-ratio > img {
+  object-fit: cover;
+}
+
+/* Wrapper to allow horizontal overflow, useful for tables and other wide content */
+
+.overflow-x,
+.table-wrapper {
+  overflow-x: auto;
+}
+
+hr {
+  border: none;
+  border-block-end: 3px solid var(--color_text--default);
+  width: 100%;
+  margin: var(--space_section) 0;
+}
+
+hr.spacer {
+  --spacer-height: calc(var(--space_flow) * 2);
+  border: none;
+  margin-block-start: var(--spacer-height) 0;
+}
+
+table {
+  width: 100%;
+}
+
+caption {
+  font-size: inherit;
+  line-height: inherit;
+  text-align: start;
+  margin-block-end: var(--space_2);
+}
+
+thead {
+  background-color: var(--color_text--default);
+  color: var(--color_background--surface);
+}
+
+th,
+td {
+  font-size: var(--font_size--small);
+  line-height: var(--font_height--small);
+  padding: var(--space_2);
+  text-align: start;
+}
+
+th {
+  font-weight: bold;
+}
+
+tr {
+  border-block-end: 0.5px solid var(--color_text--subtle);
+}
+
+tbody tr:hover {
+  background-color: var(--color_background--element);
+}
+
+code,
+samp,
+kbd,
+var {
+  font-family: var(--font_mono);
+  padding: 0.1em 0.3em;
+}
+
+code,
+samp {
+  background-color: var(--color_background--element);
+}
+
+var {
+  font-style: italic;
+  font-weight: bold;
+}
+
+kbd {
+  background-color: var(--color_text--default);
+  color: var(--color_background--surface);
+  border-radius: 5px;
+}
+
+pre code,
+pre samp {
+  display: block;
+  padding: var(--space_2);
+  overflow: auto;
+  font-family: var(--font_mono);
+  font-size: var(--font_size--small);
+  line-height: var(--font_height--small);
+}
