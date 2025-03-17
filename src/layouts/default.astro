@@ -1,9 +1,34 @@
+---
+const navItems = [
+  {
+    path: "/work",
+    label: "Work",
+    rel: "work",
+  },
+  {
+    path: "/blog",
+    label: "Blog",
+    rel: "blog",
+  },
+  {
+    path: "/about",
+    label: "About",
+    rel: "about",
+  },
+  {
+    path: "/resume",
+    label: "CV",
+    rel: "resume",
+  },
+];
+---
+
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,7 +39,6 @@
     <link rel="stylesheet" href="/src/styles/reset.css" />
     <link rel="stylesheet" href="/src/styles/core.css" />
     <link rel="stylesheet" href="/src/styles/typography.css" />
-    <link rel="stylesheet" href="/src/styles/layout.css" />
 
     <meta name="generator" content={Astro.generator} />
     <title>Nick Harbaugh</title>
@@ -28,16 +52,16 @@
 
       <nav class="main-nav">
         <ul>
-          <li><a href="/work" rel="work">Work</a></li>
-          <li><a href="/about" rel="about">About</a></li>
-          <li><a href="/resume" rel="resume">CV</a></li>
+          {navItems.map((item) => {
+            return <li><a href={item.path} rel={item.rel}>{item.label}</a></li>
+          })}
         </ul>
       </nav>
     </header>
 
-    <div class="container">
+    <main class="container">
       <slot />
-    </div>
+    </main>
 
     <footer class="site-footer">
       <hr>

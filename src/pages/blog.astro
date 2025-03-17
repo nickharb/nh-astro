@@ -2,18 +2,18 @@
 import Layout from '../layouts/page.astro';
 import { getCollection } from "astro:content";
 
-const projects = await getCollection("work");
+const blogPosts = await getCollection("blog");
 ---
 
 <Layout>
-  <section class="work">
-    <h1>My Work</h1>
+  <section class="blog">
+    <h1>My Blog</h1>
     <div class="item-grid">
-      {projects.map((post: any) => {
+      {blogPosts.map((post: any) => {
         return (
-          <div class="project">
+          <div class="post">
             <h2>
-              <a href={`/work/${post.id}`}>{post.data.title}</a>
+              <a href={`/blog/${post.id}`}>{post.data.title}</a>
             </h2>
             <p>{post.data.description}</p>
           </div>

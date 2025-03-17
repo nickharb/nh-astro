@@ -1,8 +1,37 @@
 ---
-import Home from '../components/home.astro';
-import Layout from '../layouts/default.astro';
+import Layout from "../layouts/default.astro";
 ---
 
 <Layout>
-	<Home />
+  <section class="hero">
+    <div class="cta">
+      <h1>Hello, world!</h1>
+      <p class="lede">
+        Nick Harbaugh is an artist and computer programmer working with data and
+        artificial intelligence to explore what it means to be human in a
+        technological world. He is currently looking for new opportunities with
+        forward-thinking organizations.
+      </p>
+      <a href="/work" class="button-lg">See my work</a>
+    </div>
+  </section>
 </Layout>
+
+<style>
+  .hero {
+  }
+
+  .button-lg {
+    background-color: var(--color_text--link);
+    display: inline-block;
+    margin: 2rem 0;
+    padding: 0.8rem 1.5rem;
+    color: white;
+    transition: background-color 250ms;
+  }
+
+  .button-lg:hover {
+    text-decoration: none;
+    background-color: var(--color_text--link-alt);
+  }
+</style>
