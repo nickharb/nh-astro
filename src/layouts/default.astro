@@ -5,11 +5,11 @@ const navItems = [
     label: "Work",
     rel: "work",
   },
-  {
-    path: "/blog",
-    label: "Blog",
-    rel: "blog",
-  },
+  // {
+  //   path: "/blog",
+  //   label: "Blog",
+  //   rel: "blog",
+  // },
   {
     path: "/about",
     label: "About",
@@ -39,6 +39,7 @@ const navItems = [
     <link rel="stylesheet" href="/src/styles/reset.css" />
     <link rel="stylesheet" href="/src/styles/core.css" />
     <link rel="stylesheet" href="/src/styles/typography.css" />
+    <link rel="stylesheet" href="/src/styles/content.css" />
 
     <meta name="generator" content={Astro.generator} />
     <title>Nick Harbaugh</title>
@@ -46,7 +47,7 @@ const navItems = [
   <body>
     <header class="site-header">
       <a href="/" rel="home" class="logo">
-        <img src="/src/assets/nh-logo-sm.png" alt="A pixellated eclipse" />
+        <img src="/src/assets/site/nh-logo-sm.png" alt="A pixellated eclipse" />
         <span>Nick Harbaugh</span>
       </a>
 
@@ -125,11 +126,11 @@ const navItems = [
     text-decoration: none;
   }
 
-  .container {
+  /* .container {
     max-width: var(--width_content);
     margin: 0 auto;
     padding: 0 var(--space_gutter);
-  }
+  } */
 
   .site-footer {
     padding: var(--space_gutter);

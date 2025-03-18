@@ -5,16 +5,24 @@ import { glob, file } from 'astro/loaders';
 
 // Define your collections
 const work = defineCollection({
-  loader: glob({ pattern: "**/*.md", base: "./src/content/work" }),
+  loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/work" }),
   schema: z.object({
     title: z.string(),
-    description: z.string().max(200),
+    date: z.date(),
+    published: z.boolean(),
     client: z.string(),
+    role: z.string(),
+    skills: z.string(),
+    stack: z.string(),
+    url: z.string(),
+    image: z.string(),
+    gravity: z.string().optional(),
+    description: z.string().max(200),
   })
 });
 
 const blog = defineCollection({
-  loader: glob({ pattern: "**/*.md", base: "./src/content/blog" }),
+  loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/blog" }),
   schema: z.object({
     title: z.string(),
     description: z.string().max(200),

@@ -1,0 +1,36 @@
+---
+title: Sonnentag Sustainability Display
+date: 2025-03-18
+published: true
+client: University of Wisconsin-Eau Claire
+role: Lead engineer
+skills: Full-stack development, electrical engineering, generative design
+stack: Python, Processing
+url: http://google.com/
+image: v1742321832/Selects_a7siii.00_02_34_14.Still011_uwuimw.jpg
+gravity: south
+description: >
+  A UNESCO art installation traveling the world through music
+---
+
+import { Image } from 'astro:assets';
+import { getCloudinaryImageUrl } from "../../utils/cloudinary.ts";
+import ProjectInfo from "../../components/project-info.astro";
+
+<ProjectInfo frontmatter={frontmatter} />
+
+<div class="image-layout">
+  <div class="image-full-width">
+    <Image
+      {...getCloudinaryImageUrl("v1742309446/IMG_8602_ylwmkq.jpg", 1200, 600, "fill", "north")}
+      alt="a generative visualization of musical audio frequencies"
+    />
+  </div>
+</div>
+
+## Overview
+
+## My Role
+
+## Technical Implementation
+

@@ -14,9 +14,9 @@ h5 {
 }
 
 h1 {
-  font-size: var(--font_size--xxxlarge);
-  line-height: var(--font_height--xxxlarge);
-  margin: var(--space_section) 0 var(--space_flow);
+  font-size: var(--font_size--xxlarge);
+  line-height: var(--font_height--xxlarge);
+  margin: var(--space_section) 0 var(--space_section);
 }
 
 h2 {
@@ -39,6 +39,12 @@ h4 {
 h5 {
   font-size: var(--font_size--normal);
   line-height: var(--font_height--normal);
+}
+
+/* Set typography for paragraphs */
+
+p {
+  margin-bottom: 2rem;
 }
 
 /* Set typography for small text */

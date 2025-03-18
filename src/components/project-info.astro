@@ -1,0 +1,34 @@
+---
+const { frontmatter } = Astro.props;
+---
+
+<h2 class="project-description">{frontmatter.description}</h2>
+
+<table class="project-info">
+  <tbody>
+    {frontmatter.client && (
+      <tr>
+        <td><strong>Client</strong></td>
+        <td>{frontmatter.client}</td>
+      </tr>
+    )}
+    {frontmatter.role && (
+      <tr>
+        <td><strong>Role</strong></td>
+        <td>{frontmatter.role}</td>
+      </tr>
+    )}
+    {frontmatter.skills && (
+      <tr>
+        <td><strong>Skills</strong></td>
+        <td>{frontmatter.skills}</td>
+      </tr>
+    )}
+    {frontmatter.stack && (
+      <tr>
+        <td><strong>Tech Stack</strong></td>
+        <td>{frontmatter.stack}</td>
+      </tr>
+    )}
+  </tbody>
+</table>
