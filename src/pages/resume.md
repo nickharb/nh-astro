@@ -1,5 +1,5 @@
 ---
-layout: "../layouts/page.astro"
+layout: "../layouts/about-cv.astro"
 ---
 
 # CV

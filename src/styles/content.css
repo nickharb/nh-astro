@@ -58,19 +58,9 @@ img {
   position: relative;
 }
 
-.grid-2 {
+.grid-2,
+.grid-3 {
   grid-template-columns: 1fr; /* Stack images on smaller screens */
-}
-
-@media (max-width: 768px) {
-  .image-grid {
-    width: 100%; /* Reverts to normal content width */
-    left: 0; /* Reset position */
-  }
-
-  .grid-2 {
-    grid-template-columns: 1fr; /* Stacks images on smaller screens */
-  }
 }
 
 @media (min-width: 80em) {
@@ -81,6 +71,10 @@ img {
 
   .grid-2 {
     grid-template-columns: repeat(2, 1fr); /* Maintains side-by-side layout */
+  }
+
+  .grid-3 {
+    grid-template-columns: repeat(3, 1fr); /* Maintains side-by-side layout */
   }
 }
 

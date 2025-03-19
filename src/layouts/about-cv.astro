@@ -1,0 +1,17 @@
+---
+import Layout from "../layouts/default.astro";
+---
+
+<Layout>
+  <section class="about-cv">
+    <slot />
+  </section>
+</Layout>
+
+<style>
+  .about-cv {
+    max-width: var(--width_content);
+    margin: 0 auto;
+    padding: 0 var(--space_gutter);
+  }
+</style>
