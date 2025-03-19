@@ -1,0 +1,36 @@
+---
+title: Equitable Value Explorer
+date: 2025-03-18
+published: false
+client: TK
+role: Lead Engineer
+skills: TK
+stack: TK
+url: http://google.com/
+image: v1742315484/placeholder-image_h6bsvs.webp
+gravity: south
+description: >
+  Lorem ipsum dolor sit amet consectetur adipiscing elit
+---
+
+import { Image } from 'astro:assets';
+import { getCloudinaryImageUrl } from "../../utils/cloudinary.ts";
+import ProjectInfo from "../../components/project-info.astro";
+
+<ProjectInfo frontmatter={frontmatter} />
+
+<div class="image-layout">
+  <div class="image-full-width">
+    <Image
+      {...getCloudinaryImageUrl("v1742309446/IMG_8602_ylwmkq.jpg", 1200, 600, "fill", "north")}
+      alt="a generative visualization of musical audio frequencies"
+    />
+  </div>
+</div>
+
+## Overview
+
+## My Role
+
+## Technical Implementation
+

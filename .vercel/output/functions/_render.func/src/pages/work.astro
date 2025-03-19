@@ -1,0 +1,63 @@
+---
+import Layout from "../layouts/page.astro";
+import { getCollection } from "astro:content";
+import { getCloudinaryImageUrl } from "../utils/cloudinary.ts";
+
+// Get all published projects sorted by most recent
+const projects = (await getCollection("work"))
+  .filter(post => post.data.published === true)
+  .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
+---
+
+<Layout>
+  <section class="work">
+    <h1>Selected Work</h1>
+    <div class="post-grid">
+      {
+        projects.map((post: any) => {
+          const imageUrl = post.data.image
+            ? getCloudinaryImageUrl(
+                post.data.image,
+                600,
+                300,
+                "fill",
+                post.data.gravity
+              ).src
+            : getCloudinaryImageUrl(
+                "v1742315484/placeholder-image_h6bsvs.webp",
+                600,
+                400,
+                "fill"
+              ).src; // Fallback image if no featured image
+          return (
+            <div class="project">
+              <a href={`/work/${post.id}`} class="project-link">
+                <img
+                  src={imageUrl}
+                  alt={post.data.title}
+                  class="featured-image"
+                />
+                <h3>{post.data.title}</h3>
+              </a>
+              <p>{post.data.description}</p>
+            </div>
+          );
+        })
+      }
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .work {
+    padding: 0 4rem;
+  }
+
+  .project a {
+    /* color: white; */
+  }
+
+  .project a:hover {
+    text-decoration: none;
+  }
+</style>
