@@ -1,4 +1,10 @@
 ---
+import "../styles/variables.css";
+import "../styles/reset.css";
+import "../styles/core.css";
+import "../styles/typography.css";
+import "../styles/content.css";
+
 const navItems = [
   {
     path: "/work",
@@ -35,11 +41,6 @@ const navItems = [
       href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/src/styles/variables.css" />
-    <link rel="stylesheet" href="/src/styles/reset.css" />
-    <link rel="stylesheet" href="/src/styles/core.css" />
-    <link rel="stylesheet" href="/src/styles/typography.css" />
-    <link rel="stylesheet" href="/src/styles/content.css" />
 
     <meta name="generator" content={Astro.generator} />
     <title>Nick Harbaugh</title>
@@ -53,9 +54,17 @@ const navItems = [
 
       <nav class="main-nav">
         <ul>
-          {navItems.map((item) => {
-            return <li><a href={item.path} rel={item.rel}>{item.label}</a></li>
-          })}
+          {
+            navItems.map((item) => {
+              return (
+                <li>
+                  <a href={item.path} rel={item.rel}>
+                    {item.label}
+                  </a>
+                </li>
+              );
+            })
+          }
         </ul>
       </nav>
     </header>
@@ -65,9 +74,10 @@ const navItems = [
     </main>
 
     <footer class="site-footer">
-      <hr>
+      <hr />
       <p>
-        Copyright © {new Date().getFullYear()} Nick Harbaugh<span>&nbsp;| All Rights Reserved</span
+        Copyright © {new Date().getFullYear()} Nick Harbaugh<span
+          >&nbsp;| All Rights Reserved</span
         >
       </p>
       <p>📧 <a href="mailto:njharb@gmail.com">njharb@gmail.com</a></p>
