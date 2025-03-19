@@ -14,7 +14,7 @@ const work = defineCollection({
     role: z.string(),
     skills: z.string(),
     stack: z.string(),
-    url: z.string(),
+    url: z.string().optional(),
     image: z.string(),
     gravity: z.string().optional(),
     description: z.string().max(200),

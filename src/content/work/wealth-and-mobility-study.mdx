@@ -1,16 +1,15 @@
 ---
 title: Wealth and Mobility Study
-date: 2025-03-18
+date: 2025-03-10
 published: true
-client: TK
-role: Lead engineer
-skills: Full-stack development, electrical engineering, generative design
-stack: Python, Processing
-url: http://google.com/
+client: University of Michigan
+role: Sr. Front-end Engineer
+skills: Front-end Development, Data Engineering, Data Visualization, Geospatial
+stack: TypeScript, Next.js, Mapbox, Pixi.js, D3.js, MUI, Deno
 image: v1742334560/Screenshot_2025-03-18_at_4.27.11_PM_sp3d0u.png
 gravity: south
 description: >
-  Lorem ipsum dolor sit amet consectetur adipiscing elit
+  Mapping inequality and opportunity in the U.S.
 ---
 
 import { Image } from 'astro:assets';
@@ -29,10 +28,16 @@ import ProjectInfo from "../../components/project-info.astro";
 </div>
 
 ## Overview
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus fermentum tellus a libero convallis molestie. Vivamus bibendum lorem non sollicitudin placerat. Mauris pretium viverra hendrerit. Cras at dolor non dolor molestie gravida. Nullam rhoncus dictum rhoncus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse potenti. In leo lectus, maximus sed purus quis, malesuada dictum velit. Vivamus laoreet neque vel elit feugiat, in porttitor dui auctor. Praesent aliquet urna id laoreet iaculis.
+The Wealth and Mobility Study, developed for the University of Michigan's Stone Center for Inequality Dynamics (CID), is an interactive data visualization platform that explores wealth inequality and social mobility across the United States. The tool enables users to analyze income and wealth distribution at multiple geographic levels, from states to census tracts, through an intuitive and highly interactive experience.
+
+## The Challenge
+The project required handling vast amounts of raw data, transforming it into an efficient, structured format that could be seamlessly integrated with Mapbox for geospatial visualization. The application also needed to support dynamic filtering, comparisons, and deep-dive analytics, making performance and usability key priorities.
 
 ## My Role
-Etiam ante massa, lacinia consequat molestie dictum, ullamcorper eget leo. Etiam finibus pellentesque vulputate. Etiam odio purus, ornare in gravida eget, iaculis eget sapien. Mauris condimentum turpis nec dapibus mollis. In condimentum ac purus id aliquet. Duis interdum ex ac blandit consectetur. Donec non velit nisl. Integer venenatis justo ligula, sit amet lobortis leo lobortis vitae. Proin eleifend, diam eu rutrum dapibus, orci nisl bibendum neque, ac dictum lectus tortor vitae ligula. In a orci eget lacus dictum mollis in et nisi. Mauris aliquet ligula nisi, vel finibus ante aliquam molestie.
+As one of two senior front-end engineers, I was responsible for:
+- Developing interactive Mapbox components that allow users to explore income and wealth data across four geographic levels (state, CBSA, county, and census tract).
+- Implementing dynamic visualizations with Pixi.js and D3.js, providing detailed insights into wealth and mobility trends.
+- Optimizing data processing pipelines using Deno, structuring large datasets into a nested JSON format for fast rendering and smooth user interactions.
 
 <div class="image-layout">
   <div class="image-full-width">
@@ -44,7 +49,13 @@ Etiam ante massa, lacinia consequat molestie dictum, ullamcorper eget leo. Etiam
 </div>
 
 ## Technical Implementation
-Integer felis libero, iaculis sed massa quis, iaculis malesuada metus. Suspendisse bibendum ante id ultrices volutpat. Donec nibh lacus, facilisis at ultrices id, ullamcorper in ipsum. Mauris eu nulla a libero sodales ultricies. Proin fringilla ante tellus, ultrices molestie quam porta eget. Suspendisse potenti. Fusce in justo dapibus, posuere quam eget, ultricies odio. Vestibulum fringilla nibh felis, et porttitor orci rutrum ac. Ut faucibus nulla et mauris vulputate aliquet. Nulla ullamcorper dui vitae porttitor venenatis. Sed varius convallis felis eget pulvinar. Nulla nec volutpat nibh.
+- Next.js & TypeScript: Built a modern, scalable architecture.
+- Mapbox: Created an interactive mapping interface for geographic wealth analysis.
+- Pixi.js & D3.js: Developed custom high-performance visualizations for deep-dive analytics.
+- MUI: Designed a polished UI for data exploration and user navigation.
+- Deno: Preprocessed raw data into an optimized format for real-time queries and rendering.
+
+The Wealth and Mobility Study equips researchers, policymakers, and the public with a powerful tool to better understand the dynamics of inequality, fostering informed discussions about wealth mobility and economic justice in the U.S.
 
 <div class="image-layout">
   <div class="image-grid grid-2">

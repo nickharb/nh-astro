@@ -1,16 +1,15 @@
 ---
 title: Dartmouth Impact Explorer
-date: 2025-03-18
+date: 2025-03-12
 published: true
-client: TK
-role: Lead engineer
-skills: Full-stack development, electrical engineering, generative design
-stack: Python, Processing
-url: http://google.com/
+client: Dartmouth College
+role: Lead Front-end Engineer
+skills: Front-end Development, 3D Rendering, Data Visualization
+stack: TypeScript, React.js, Vite, Three.js, GraphQL, SQLite
 image: v1742334688/screencapture-clients-periscopic-dartmouth-ctl-dartmouth-ctl-client-dev-now-explore-annual-fund-annual-funds-support-overall-2025-03-18-16_22_42_hwirbn.png
 gravity: north
 description: >
-  Lorem ipsum dolor sit amet consectetur adipiscing elit
+  Visualizing a multibillion-dollar fundraising campaign
 ---
 
 import { Image } from 'astro:assets';
@@ -29,10 +28,14 @@ import ProjectInfo from "../../components/project-info.astro";
 </div>
 
 ## Overview
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus fermentum tellus a libero convallis molestie. Vivamus bibendum lorem non sollicitudin placerat. Mauris pretium viverra hendrerit. Cras at dolor non dolor molestie gravida. Nullam rhoncus dictum rhoncus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse potenti. In leo lectus, maximus sed purus quis, malesuada dictum velit. Vivamus laoreet neque vel elit feugiat, in porttitor dui auctor. Praesent aliquet urna id laoreet iaculis.
+The Dartmouth Impact Explorer is an interactive tool designed to showcase the data behind Dartmouth’s Call to Lead campaign, which raised over $3.5 billion to support students, faculty, and institutional initiatives. The client needed a visually impressive platform to explore donor data dynamically, engaging users with compelling, data-driven storytelling.
+
+## The Challenge
+The client wanted an interactive, visually striking experience that could filter and represent donor demographics through dynamic visualizations. The tool needed to integrate real-time data queries, run smoothly in the browser, and maintain high performance despite rendering complex animations and 3D elements.
 
 ## My Role
-Etiam ante massa, lacinia consequat molestie dictum, ullamcorper eget leo. Etiam finibus pellentesque vulputate. Etiam odio purus, ornare in gravida eget, iaculis eget sapien. Mauris condimentum turpis nec dapibus mollis. In condimentum ac purus id aliquet. Duis interdum ex ac blandit consectetur. Donec non velit nisl. Integer venenatis justo ligula, sit amet lobortis leo lobortis vitae. Proin eleifend, diam eu rutrum dapibus, orci nisl bibendum neque, ac dictum lectus tortor vitae ligula. In a orci eget lacus dictum mollis in et nisi. Mauris aliquet ligula nisi, vel finibus ante aliquam molestie.
+As tech lead, I determined the tech stack and architectural approach. I collaborated with Periscopic’s data engineering team to design the data schema and worked closely with the design team to balance aesthetics with performance constraints.
+Technical Implementation
 
 <div class="image-layout">
   <div class="image-grid grid-2">
@@ -49,7 +52,12 @@ Etiam ante massa, lacinia consequat molestie dictum, ullamcorper eget leo. Etiam
 </div>
 
 ## Technical Implementation
-Integer felis libero, iaculis sed massa quis, iaculis malesuada metus. Suspendisse bibendum ante id ultrices volutpat. Donec nibh lacus, facilisis at ultrices id, ullamcorper in ipsum. Mauris eu nulla a libero sodales ultricies. Proin fringilla ante tellus, ultrices molestie quam porta eget. Suspendisse potenti. Fusce in justo dapibus, posuere quam eget, ultricies odio. Vestibulum fringilla nibh felis, et porttitor orci rutrum ac. Ut faucibus nulla et mauris vulputate aliquet. Nulla ullamcorper dui vitae porttitor venenatis. Sed varius convallis felis eget pulvinar. Nulla nec volutpat nibh.
+- React.js, Vite & TypeScript: Chosen for a modern, fast development environment with optimized build performance.
+- Three.js & React-Three-Fiber: Built a custom particle system to represent donor data dynamically, reacting to user-selected demographic filters.
+- GSAP Animations: Created smooth motion transitions to enhance interactivity.
+- GraphQL & SQLite: Optimized queries for real-time data-driven visualizations.
+
+The final product is a visually engaging, interactive platform that transforms complex fundraising data into a compelling digital experience.
 
 <div class="image-layout">
   <div class="image-full-width">

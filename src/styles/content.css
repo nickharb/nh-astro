@@ -53,6 +53,7 @@ img {
 .image-grid {
   display: grid;
   gap: 2rem;
+  margin-bottom: 2rem;
   width: 100%;
   max-width: none;
   position: relative;

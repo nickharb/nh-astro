@@ -20,15 +20,16 @@ h1 {
 }
 
 h2 {
-  font-size: var(--font_size--xlarge);
-  line-height: var(--font_height--xlarge);
+  font-size: var(--font_size--large);
+  line-height: var(--font_height--large);
   margin: var(--space_flow) 0 var(--space_gutter);
 }
 
 h3 {
-  font-size: var(--font_size--medium);
-  line-height: var(--font_height--medium);
+  font-size: var(--font_size--normal);
+  line-height: var(--font_height--normal);
   margin: var(--space_flow) 0 var(--space_gutter);
+  text-decoration: underline;
 }
 
 h4 {

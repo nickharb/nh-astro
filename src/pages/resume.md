@@ -2,13 +2,17 @@
 layout: "../layouts/about-cv.astro"
 ---
 
-# CV
+# Curriculum Vitae
 
-📧 [njharb@gmail.com](mailto:njharb@gmail.com)
-
-<a href="/Nick_Harbaugh_CV.pdf" download="Nick_Harbaugh_CV.pdf" class="download-button">
-  📄 Download CV
-</a>
+<div class="cv-links">
+  <a href="mailto:nick@nickharb.com">
+    📧 nick@nickharb.com
+  </a>
+  |
+  <a href="/Nick_Harbaugh_CV.pdf" download="Nick_Harbaugh_CV.pdf">
+    📄 Download CV
+  </a>
+</div>
 
 Full-stack engineer with 15+ years of experience building data-driven web applications. I’ve led diverse technical and creative teams, co-founded a software studio, and collaborated with forward-thinking companies worldwide.
 
@@ -86,8 +90,15 @@ Full-stack engineer with 15+ years of experience building data-driven web applic
 - **B.S. in Visual Journalism & International Studies**, University of Miami (2009)
 
 <style>
+  .cv-links {
+    margin-bottom: 2rem;
+  }
+  .email-button {
+    display: inline-block;
+    margin-bottom: 1rem;
+  }
   .download-button {
-    margin-bottom: 25px;
+    margin-bottom: 4rem;
     display: inline-block;
   }
 </style>

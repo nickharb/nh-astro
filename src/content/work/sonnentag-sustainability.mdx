@@ -3,14 +3,13 @@ title: Sonnentag Sustainability Display
 date: 2025-03-25
 published: true
 client: University of Wisconsin-Eau Claire
-role: Lead engineer
-skills: Full-stack development, electrical engineering, generative design
-stack: Python, Processing
-url: http://google.com/
+role: Lead Engineer
+skills: Front-end Development, API, 3D Rendering, Data Visualization
+stack: React.js, Apollo, Three.js, D3.js, Blender
 image: v1742321832/Selects_a7siii.00_02_34_14.Still011_uwuimw.jpg
 gravity: south
 description: >
-  A UNESCO art installation traveling the world through music
+  Showcasing groundbreaking sustainability with an interactive touchscreen installation
 ---
 
 import { Image } from 'astro:assets';
@@ -22,19 +21,82 @@ import ProjectInfo from "../../components/project-info.astro";
 <div class="image-layout">
   <div class="image-full-width">
     <Image
-      {...getCloudinaryImageUrl("v1742309446/IMG_8602_ylwmkq.jpg", 1200, 600, "fill", "north")}
-      alt="a generative visualization of musical audio frequencies"
+      {...getCloudinaryImageUrl("v1742347792/Selects_a7siii.00_02_34_14.Still011_vtbzwb.jpg", 1200, 600, "fill", "center")}
+      alt="TK"
     />
   </div>
 </div>
 
 ## Overview
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus fermentum tellus a libero convallis molestie. Vivamus bibendum lorem non sollicitudin placerat. Mauris pretium viverra hendrerit. Cras at dolor non dolor molestie gravida. Nullam rhoncus dictum rhoncus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse potenti. In leo lectus, maximus sed purus quis, malesuada dictum velit. Vivamus laoreet neque vel elit feugiat, in porttitor dui auctor. Praesent aliquet urna id laoreet iaculis.
+The Sonnentag Sustainability Display is an interactive touchscreen installation in the lobby of the newly constructed Sonnentag Complex at UW-Eau Claire. Designed to highlight the building’s cutting-edge sustainability features, the display allows visitors to explore an interactive 3D model and view real-time energy and water usage data gathered from the building’s submetering system.
+
+<div class="image-layout">
+  <div class="image-full-width">
+    <Image
+      {...getCloudinaryImageUrl("v1742347654/localhost_5173__8_n6ntuj.png", 1200, 650, "fill", "center")}
+      alt="TK"
+    />
+  </div>
+</div>
+
+## The Challenge
+The Sonnentag Complex is one of the most energy-efficient buildings in the region, incorporating geothermal heating, solar energy, and advanced automation systems. The client wanted an engaging, interactive way to educate visitors about these often invisible sustainability efforts. The display needed to integrate a highly detailed 3D model, handle real-time data visualization, and run smoothly on a dedicated on-site computer.
 
 ## My Role
-Etiam ante massa, lacinia consequat molestie dictum, ullamcorper eget leo. Etiam finibus pellentesque vulputate. Etiam odio purus, ornare in gravida eget, iaculis eget sapien. Mauris condimentum turpis nec dapibus mollis. In condimentum ac purus id aliquet. Duis interdum ex ac blandit consectetur. Donec non velit nisl. Integer venenatis justo ligula, sit amet lobortis leo lobortis vitae. Proin eleifend, diam eu rutrum dapibus, orci nisl bibendum neque, ac dictum lectus tortor vitae ligula. In a orci eget lacus dictum mollis in et nisi. Mauris aliquet ligula nisi, vel finibus ante aliquam molestie.
+As lead front-end engineer, I developed the technical architecture and collaborated with Lauren Malkani on design and content strategy. We conducted in-depth research on the building’s construction and refined architectural models from the project’s architects to optimize them for web performance.
+
+<div class="image-layout">
+  <div class="image-full-width">
+    <Image
+      {...getCloudinaryImageUrl("v1742347675/Screenshot_2024-08-26_at_11.00.21_AM_kfo2jw.png", 1200, 600, "fill", "south")}
+      alt="TK"
+    />
+  </div>
+
+  <div class="image-grid grid-2">
+    <Image
+      {...getCloudinaryImageUrl("v1742347667/Screenshot_2024-08-24_at_5.18.46_PM_slt2vj.png", 600, 400, "fill")}
+      alt="TK"
+    />
+
+    <Image
+      {...getCloudinaryImageUrl("v1742347679/279uCyC8_gljl4l.png", 600, 400, "fill")}
+      alt="TK"
+    />
+  </div>
+</div>
 
 ## Technical Implementation
-Integer felis libero, iaculis sed massa quis, iaculis malesuada metus. Suspendisse bibendum ante id ultrices volutpat. Donec nibh lacus, facilisis at ultrices id, ullamcorper in ipsum. Mauris eu nulla a libero sodales ultricies. Proin fringilla ante tellus, ultrices molestie quam porta eget. Suspendisse potenti. Fusce in justo dapibus, posuere quam eget, ultricies odio. Vestibulum fringilla nibh felis, et porttitor orci rutrum ac. Ut faucibus nulla et mauris vulputate aliquet. Nulla ullamcorper dui vitae porttitor venenatis. Sed varius convallis felis eget pulvinar. Nulla nec volutpat nibh.
+- React.js & Apollo: Created a scalable front-end with a GraphQL-based real-time data pipeline.
+- Three.js & React-Three-Fiber: Developed an interactive 3D model showcasing the building’s sustainability features.
+- D3.js: Designed a custom dashboard to visualize power, water, and HVAC data from submeters.
+- Blender: Optimized architectural models for seamless rendering in a browser environment.
+- Hardware Integration: Worked with UW’s IT team to select a NUC micro gaming PC capable of handling complex 3D graphics.
 
+The Sonnentag Sustainability Display transforms technical building data into an accessible, visually rich experience, helping visitors understand and appreciate the facility’s commitment to sustainability.
 
+<div class="image-layout">
+  <div class="image-grid grid-2">
+    <Image
+      {...getCloudinaryImageUrl("v1742347816/Selects_a7siii.00_03_15_00.Still017_jhllzp.jpg", 600, 400, "fill")}
+      alt="TK"
+    />
+
+    <Image
+      {...getCloudinaryImageUrl("v1742347815/Selects_a7siii.00_04_12_11.Still025_kvkzhx.jpg", 600, 400, "fill")}
+      alt="TK"
+    />
+  </div>
+
+  <div class="image-grid grid-2">
+    <Image
+      {...getCloudinaryImageUrl("v1742347819/Selects_a7siii.00_03_54_21.Still022_q3lrc7.jpg", 600, 400, "fill")}
+      alt="TK"
+    />
+
+    <Image
+      {...getCloudinaryImageUrl("v1742347811/Selects_a7siii.00_03_25_03.Still019_wew3ux.jpg", 600, 400, "fill")}
+      alt="TK"
+    />
+  </div>
+</div>
