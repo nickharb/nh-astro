@@ -5,7 +5,13 @@
 .post {
   max-width: var(--width_content);
   margin: 0 auto;
-  padding: 0 var(--space_gutter);
+  padding: 0 1.5rem;
+}
+
+@media (min-width: 40rem) {
+  .post {
+    padding: 0 3rem;
+  }
 }
 
 .post h1 {
@@ -13,11 +19,23 @@
 }
 
 .post-grid {
-  align-items: flex-start;
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(3, 1fr);
   position: relative;
+}
+
+@media (min-width: 30rem) {
+  .post-grid {
+    align-items: flex-start;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+  }
+}
+
+@media (min-width: 60rem) {
+  .post-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .post-grid h3 {

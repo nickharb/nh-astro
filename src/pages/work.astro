@@ -5,8 +5,10 @@ import { getCloudinaryImageUrl } from "../utils/cloudinary.ts";
 
 // Get all published projects sorted by most recent
 const projects = (await getCollection("work"))
-  .filter(post => post.data.published === true)
-  .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
+  .filter((post) => post.data.published === true)
+  .sort(
+    (a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime()
+  );
 ---
 
 <Layout>
@@ -50,7 +52,23 @@ const projects = (await getCollection("work"))
 
 <style>
   .work {
-    padding: 0 4rem;
+    padding: 0 1.5rem;
+  }
+
+  @media (min-width: 40rem) {
+    .work {
+      padding: 0 3rem;
+    }
+  }
+
+  .project {
+    margin-bottom: 4rem;
+  }
+
+  @media (min-width: 30rem) {
+    .project {
+      margin-bottom: 0;
+    }
   }
 
   .project a {

@@ -5,6 +5,14 @@ import "../styles/core.css";
 import "../styles/typography.css";
 import "../styles/content.css";
 
+/*
+todo
+- update about page copy
+- include my links to linkedin and instagram
+- body text style tweaks for readability (larger)
+- add generative p5 sketch to homepage
+*/
+
 const navItems = [
   {
     path: "/work",
@@ -37,8 +45,12 @@ const navItems = [
     <link rel="icon" href="/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
+    <!-- <link
       href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
       rel="stylesheet"
     />
 
@@ -85,14 +97,14 @@ const navItems = [
           >&nbsp;| All Rights Reserved</span
         >
       </p>
-      <p>📧 <a href="mailto:njharb@gmail.com">njharb@gmail.com</a></p>
+      <p>📧 <a href="mailto:nick@nickharb.com">nick@nickharb.com</a></p>
     </footer>
   </body>
 </html>
 
 <style>
   .site-header {
-    padding: var(--space_gutter);
+    padding: 1rem 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -107,6 +119,14 @@ const navItems = [
     color: var(--color_text--default);
     text-transform: uppercase;
     transition: color 500ms;
+    font-family: var(--font_mono);
+    margin-left: -0.3rem;
+  }
+
+  @media (min-width: 40rem) {
+    .logo {
+      margin-left: 0;
+    }
   }
 
   .logo:hover {
@@ -124,6 +144,7 @@ const navItems = [
 
   .main-nav {
     font-size: var(--font_size--medium);
+    font-family: var(--font_mono);
   }
 
   .main-nav ul {
@@ -171,9 +192,9 @@ const navItems = [
       padding: var(--space_gutter);
     }
 
-    .container {
+    /* .container {
       padding: 0 var(--space_flow);
-    }
+    } */
 
     .site-footer {
       padding: var(--space_section) var(--space_flow) var(--space_gutter);

@@ -5,10 +5,14 @@ import Layout from "../layouts/about-cv.astro";
 <Layout>
   <section class="hero">
     <div class="cta">
-      <h1>Hello, World!</h1>
       <p class="lede">
-        Full-stack engineer with a front-end focus, specializing in data-driven
-        applications and immersive experiences.
+        🤓 I'm a full-stack engineer with a front-end focus, specializing in
+        data-driven applications and immersive experiences.
+      </p>
+      <p class="lede">
+        ☕️ As a founder and technology leader, I bring an understanding of the
+        whole product lifecycle to my work, blending deep technical expertise
+        with creative perspective.
       </p>
       <a href="/work" class="button-lg">See My Work</a>
     </div>
@@ -16,18 +20,36 @@ import Layout from "../layouts/about-cv.astro";
 </Layout>
 
 <style>
+  .cta {
+    margin-top: 2rem;
+  }
+
+  @media (min-width: 50rem) {
+    .cta {
+      margin-top: 4rem;
+    }
+  }
+
   .lede {
-    max-width: 49rem;
-    font-size: var(--font_size--large);
+    max-width: 60rem;
+    font-size: var(--font_size--medium);
+    font-family: var(--font_mono);
+  }
+
+  @media (min-width: 30rem) {
+    .lede {
+      font-size: var(--font_size--large);
+    }
   }
 
   .button-lg {
-    background-color: var(--color_text--link);
+    background-color: var(--color_text--link-dark);
     display: inline-block;
     margin: 2rem 0;
     padding: 0.8rem 1.5rem;
     color: white;
     transition: background-color 250ms;
+    font-family: var(--font_mono);
   }
 
   .button-lg:hover {

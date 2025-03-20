@@ -16,7 +16,13 @@ h5 {
 h1 {
   font-size: var(--font_size--xxlarge);
   line-height: var(--font_height--xxlarge);
-  margin: var(--space_section) 0 var(--space_section);
+  margin: 2rem 0 3rem;
+}
+
+@media (min-width: 30rem) {
+  h1 {
+    margin: var(--space_section) 0 var(--space_section);
+  }
 }
 
 h2 {

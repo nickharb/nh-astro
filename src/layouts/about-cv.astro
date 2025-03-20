@@ -12,6 +12,12 @@ import Layout from "../layouts/default.astro";
   .about-cv {
     max-width: var(--width_content);
     margin: 0 auto;
-    padding: 0 var(--space_gutter);
+    padding: 0 1.5rem;
+  }
+
+  @media (min-width: 40rem) {
+    .about-cv {
+      padding: 0 3rem;
+    }
   }
 </style>

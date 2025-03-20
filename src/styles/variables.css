@@ -30,7 +30,9 @@
   /* Colors */
   --color_text--default: #ffffff;
   --color_text--subtle: #b2b2b2;
-  --color_text--link: #bb77f6;
+  /* --color_text--link: #bb77f6; */
+  --color_text--link: #c292ec;
+  --color_text--link-dark: #7638ac;
   --color_text--link-alt: #e546c3;
   /* --color_background--surface: #101218; */
   --color_background--surface: #000000;
@@ -38,10 +40,9 @@
   --color_accent: #e546c3;
 
   /* Font Families */
-  --font_body: "JetBrains Mono", monospace;
-  --font_head: inherit;
-  /* --font_mono: "Source Code Pro", Menlo, Consolas, monospace; */
-  --font_mono: inherit;
+  --font_body: "Inter", sans-serif;
+  --font_head: "JetBrains Mono", monospace;
+  --font_mono: "JetBrains Mono", monospace;
 
   /* Font Weights */
   --font_weight--thin: 100;
@@ -70,9 +71,9 @@
   --font_height--normal: 1.8;
   --font_height--medium: 1.5;
   --font_height--large: 1.3;
-  --font_height--xlarge: 1.2;
-  --font_height--xxlarge: 1.1;
-  --font_height--xxxlarge: 1;
+  --font_height--xlarge: 1.3;
+  --font_height--xxlarge: 1.3;
+  --font_height--xxxlarge: 1.2;
 
   /* Device breakpoints */
   --breakpoint--mobile: 30rem;
