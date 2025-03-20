@@ -17,6 +17,15 @@ import Layout from '../layouts/page.astro';
 <style>
   .not-found {
     text-align: center;
+    max-width: var(--width_content);
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  @media (min-width: 40rem) {
+    .not-found {
+      padding: 0 3rem;
+    }
   }
 
   .not-found img {

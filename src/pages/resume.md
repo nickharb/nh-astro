@@ -18,11 +18,9 @@ Full-stack engineer with 15+ years of experience building data-driven web applic
 
 ## Technical Skills
 
-**Front-end:** TypeScript, React, Next.js, Svelte, Vue, Astro, Three.js, D3.js, Mapbox
-
-**Back-end:** Node.js, Python, PHP, MySQL, MongoDB, Sanity, Drupal, Craft CMS, WordPress
-
-**Software:** Adobe CS, Figma, ArcGIS Pro, Blender, Unity 3D, After Effects, Premiere Pro
+- **Front-end:** TypeScript, React, Next.js, Svelte, Vue, Astro, Three.js, D3.js, Mapbox
+- **Back-end:** Node.js, Python, PHP, MySQL, MongoDB, Sanity, Drupal, Craft CMS, WordPress
+- **Software:** Adobe CS, Figma, ArcGIS Pro, Blender, Unity 3D, After Effects, Premiere Pro
 
 ---
 
