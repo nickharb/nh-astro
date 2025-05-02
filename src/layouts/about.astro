@@ -1,0 +1,23 @@
+---
+import Layout from "../layouts/default.astro";
+---
+
+<Layout>
+  <section class="about">
+    <slot />
+  </section>
+</Layout>
+
+<style>
+  .about {
+    max-width: var(--width_wide);
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  @media (min-width: 40rem) {
+    .about {
+      padding: 0 3rem;
+    }
+  }
+</style>

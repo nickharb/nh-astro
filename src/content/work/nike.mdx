@@ -1,16 +1,36 @@
 ---
 title: Nike Genesis
-date: 2025-04-01
+date: 2025-04-20
 published: true
 client: Nike
-role: Lead Engineer
+role: Lead Front-end Engineer, Data Visualization Designer
 skills: Front-end Development, API, 3D Rendering, Data Visualization
-stack: React.js, Apollo, Three.js, D3.js, Blender
+stack: React.js, P5.js, Three.js, GraphQL
 image: https://res.cloudinary.com/delsdkwhm/image/upload/v1746023560/nike-feature_e7sexc.jpg
 gravity: north
 description: Prototyping a cutting-edge internal CMS for the Nike R&D Team
 ---
 
-## Overview
-I prototyped a cutting-edge internal CMS for the Nike R&D team. The prototype is built using ReactJS and GraphQL and features custom data visualizations designed and developed in Processing and ThreeJS. That’s all I can tell you publicly due to our agreement with Nike, but please feel free to contact me for more information.
+import { Image } from 'astro:assets';
+import { getCloudinaryImageUrl } from "../../utils/cloudinary.ts";
 
+<div class="image-layout">
+  <div class="image-full-width">
+    <Image
+      {...getCloudinaryImageUrl("https://res.cloudinary.com/delsdkwhm/image/upload/v1746023560/nike-feature_e7sexc.jpg", 1280, 1280, "fit", "center")}
+      alt="TK"
+    />
+  </div>
+</div>
+
+## Overview
+I prototyped a cutting-edge internal CMS for the Nike R&D team. The prototype is built using React.js and GraphQL and features custom data visualizations designed and developed in P5.js and Three.js. That’s all I can tell you publicly due to our agreement with Nike, but please feel free to contact me for more information.
+
+<div class="image-layout">
+  <div class="image-full-width">
+    <Image
+      {...getCloudinaryImageUrl("https://res.cloudinary.com/delsdkwhm/image/upload/v1744777423/Nike_home_frpoon.png", 1280, 1280, "fit", "center")}
+      alt="TK"
+    />
+  </div>
+</div>

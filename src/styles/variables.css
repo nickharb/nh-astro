@@ -20,12 +20,8 @@
   --space_layout-gap: var(--space_4);
 
   /* Layout Widths */
-  --width_content: 60rem; /* 960px + gutters */
-  --width_sidebar: 20rem; /* 320px + gutters */
-  --width_wide: calc(
-    var(--width_content) + var(--width_sidebar) + var(--space_layout-gap)
-  );
-  /* Total wide width: 60rem + 20rem + 2rem = 82rem */
+  --width_content: 60rem;
+  --width_wide: 80rem;
 
   /* Colors */
   --color_text--default: #ffffff;

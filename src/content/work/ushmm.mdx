@@ -3,13 +3,25 @@ title: Early Warning Project
 date: 2025-04-01
 published: true
 client: United States Holocaust Memorial Museum
-role: Lead Engineer
-skills: Front-end Development, API, 3D Rendering, Data Visualization
-stack: React.js, Apollo, Three.js, D3.js, Blender
+role: Lead Front-end Engineer, Data Visualization Designer
+skills: Front-end Development, Exploratory Data Analysis, Data Visualization
+stack: React.js, D3.js, SVG, Leaflet
 image: https://res.cloudinary.com/delsdkwhm/image/upload/v1746026181/ewp-thumb-16-9-1440x960_qjwiql.jpg
 gravity: north
 description: Predicting the risk of genocide in every country around the world
 ---
+
+import { Image } from 'astro:assets';
+import { getCloudinaryImageUrl } from "../../utils/cloudinary.ts";
+
+<div class="image-layout">
+  <div class="image-full-width">
+    <Image
+      {...getCloudinaryImageUrl("https://res.cloudinary.com/delsdkwhm/image/upload/v1746134836/Screenshot_2025-05-01_at_4.26.23_PM_eizgct.png", 1280, 1280, "fit", "center")}
+      alt="TK"
+    />
+  </div>
+</div>
 
 ## Overview
 Early Warning Project is an ongoing project by the United States Holocaust Memorial Museum (USHMM) exploring genocide around the world. I had the opportunity to work on the USHMM’S custom built and trained algorithm capable of generating up-to-date risk assessments on a country’s current likelihood to experience genocide now or in the near future. USHMM commissioned me to visualize the complex data in the form of an interactive map, country report card and interactive risk assessment tool that allows users to explore unique scenarios through over 30 risk factors. Risk factor ratings for individual countries incorporate a vast amount of data based on a variety of factors like population size, child mortality or ethnic fractionalization to create a unprecedented and comprehensive look into genocide risk in both the past and present.
@@ -19,3 +31,23 @@ I designed and built the interface and interactive map to allow users to quickly
 
 A custom filtering system allows users to dig into the information with an advanced filtering system to narrow down the specific risk factors that influence a countries’ current risk score or ongoing genocide.
 
+<div class="image-layout">
+  <div class="image-full-width">
+    <Image
+      {...getCloudinaryImageUrl("https://res.cloudinary.com/delsdkwhm/image/upload/v1746026178/ewp-banner-1-2400x640_lt82iq.jpg", 1280, 1280, "fit", "center")}
+      alt="TK"
+    />
+  </div>
+
+  <div class="image-grid grid-2">
+    <Image
+      {...getCloudinaryImageUrl("https://res.cloudinary.com/delsdkwhm/image/upload/v1746026182/Screenshot-2020-01-15-10.20.04-1440x1440_ndxig5.png", 1080, 960, "fill")}
+      alt="TK"
+    />
+
+    <Image
+      {...getCloudinaryImageUrl("https://res.cloudinary.com/delsdkwhm/image/upload/v1746026179/Screenshot-2020-01-15-10.34.42-1440x1080_hyapuh.png", 1080, 960, "fill")}
+      alt="TK"
+    />
+  </div>
+</div>

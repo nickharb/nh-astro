@@ -1,6 +1,6 @@
 ---
 title: China Power Project
-date: 2025-04-01
+date: 2025-04-23
 published: true
 client: Center for Strategic and International Studies
 role: Lead Engineer
@@ -11,8 +11,29 @@ gravity: north
 description: Creating a data visualization platform to analyze China's global influence
 ---
 
+import { Image } from 'astro:assets';
+import { getCloudinaryImageUrl } from "../../utils/cloudinary.ts";
+
+<div class="image-layout">
+  <div class="image-full-width">
+    <Image
+      {...getCloudinaryImageUrl("https://res.cloudinary.com/delsdkwhm/image/upload/v1746026349/Screen-Shot-2020-01-22-at-4.04.23-PM-1440x960_fbgaxu.png", 1200, 1200, "fit", "center")}
+      alt="TK"
+    />
+  </div>
+</div>
+
 ## Overview
-As the lead engineer and designer for CSIS’s ChinaPower Project, I developed a suite of interactive data visualizations that brought complex geopolitical concepts to life for a broad audience. Working closely with researchers, I translated original datasets and academic insights into engaging, exploratory tools that helped users better understand the multifaceted nature of Chinese power—from economic clout to global image. The project’s emphasis on interactivity and clarity made it a widely recognized and awarded resource.
+As the lead engineer and designer for CSIS’s ChinaPower Project, I designed and developed a suite of interactive data visualizations that brought complex geopolitical concepts to life for a broad audience. Working closely with researchers, I translated original datasets and academic insights into engaging, exploratory tools that helped users better understand the multifaceted nature of Chinese power—from economic clout to global image. The project’s emphasis on interactivity and clarity made it a widely recognized and awarded resource.
+
+<div class="image-layout">
+  <div class="image-full-width">
+    <Image
+      {...getCloudinaryImageUrl("https://res.cloudinary.com/delsdkwhm/image/upload/v1746026330/csis_phone-2048x1438_iy7she.jpg", 1280, 1280, "fit", "center")}
+      alt="TK"
+    />
+  </div>
+</div>
 
 ## My Role
 I led the full visual design process, crafting the interface, color system, typographic hierarchy, and data visualization patterns to ensure visual coherence and accessibility across all modules. I implemented all front-end engineering using React, D3, SVG, Highcharts, and Google Maps API, building tools that could dynamically surface insights and adapt across form factors. My work was featured in multiple releases of the project over several years, each expanding the scope and refining the presentation of ChinaPower’s research.
@@ -20,3 +41,40 @@ I led the full visual design process, crafting the interface, color system, typo
 ## Exploratory Data Analysis
 In support of the research team, I also performed exploratory data analysis using R and Python to evaluate and shape the stories we could tell. My technical and editorial skills helped bridge the gap between data and narrative, ensuring that each visualization was both analytically robust and user-focused. This collaborative, interdisciplinary approach enabled the ChinaPower Project to serve not only scholars and policymakers, but also students, journalists, and the broader public.
 
+<div class="image-layout">
+  <div class="image-grid grid-2">
+    <Image
+      {...getCloudinaryImageUrl("https://res.cloudinary.com/delsdkwhm/image/upload/v1746026358/Screen-Shot-2020-01-22-at-4.49.36-PM-1440x960_ln4t9q.png", 1080, 720, "fill")}
+      alt="TK"
+    />
+    
+    <Image
+      {...getCloudinaryImageUrl("https://res.cloudinary.com/delsdkwhm/image/upload/v1746026336/Screen-Shot-2020-01-22-at-4.01.16-PM-1-1920x1080_ggvbjc.png", 1080, 720, "fill")}
+      alt="TK"
+    />
+  </div>
+
+  <div class="image-grid grid-2">
+    <Image
+      {...getCloudinaryImageUrl("https://res.cloudinary.com/delsdkwhm/image/upload/v1746026353/Screenshot-2020-01-13-16.37.05-1440x1080_sisgig.png", 1080, 720, "fill", "south")}
+      alt="TK"
+    />
+    
+    <Image
+      {...getCloudinaryImageUrl("https://res.cloudinary.com/delsdkwhm/image/upload/v1746026337/csis-defense-thumbnail-1440x960_drk3cm.jpg", 1080, 720, "fill", "south")}
+      alt="TK"
+    />
+  </div>
+
+  <div class="image-grid grid-2">
+    <Image
+      {...getCloudinaryImageUrl("https://res.cloudinary.com/delsdkwhm/image/upload/v1746026346/Screenshot-2017-04-24-18.36.53-1440x960_beqycp.png", 1080, 1080, "fit")}
+      alt="TK"
+    />
+    
+    <Image
+      {...getCloudinaryImageUrl("https://res.cloudinary.com/delsdkwhm/image/upload/v1746026342/feature_CSIS-1440x960_uputc5.png", 1080, 1080, "fit")}
+      alt="TK"
+    />
+  </div>
+</div>

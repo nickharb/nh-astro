@@ -3,21 +3,66 @@ title: Atmosfy
 date: 2025-04-01
 published: true
 client: Atmosfy
-role: Lead Engineer
-skills: Front-end Development, API, 3D Rendering, Data Visualization
-stack: React.js, Apollo, Three.js, D3.js, Blender
+role: Lead Front-end Engineer
+skills: Front-end Development, Native App Development, DevOps, Server Management
+stack: React.js, React Native, Next.js, Apollo, Redux, AWS, Cloudfront
 image: v1746013706/atmosfy-feature_ptv61i.jpg
 gravity: center
 description: Building the next Tiktok competitor for foodies
 ---
+
+import { Image } from 'astro:assets';
+import { getCloudinaryImageUrl } from "../../utils/cloudinary.ts";
+
+<div class="image-layout">
+  <div class="image-full-width">
+    <Image
+      {...getCloudinaryImageUrl("https://res.cloudinary.com/delsdkwhm/image/upload/v1746013706/atmosfy-feature_ptv61i.jpg", 1200, 1200, "fit", "center")}
+      alt="TK"
+    />
+  </div>
+</div>
 
 ## Overview
 I worked with MassFire Media on their rapidly growing video foodie app, Atmosfy. MassFire needed to take the app to the next level during the sprint for their Series A funding round and hired me to lead the development of the mobile web experience and prototype key features for the native app. I worked closely with the engineering and design teams and built the mobile web app from the ground up in only three months, accelerating user conversions and strengthening SEO.
 
 Atmosfy allows users to explore restaurants and experiences through short videos. Users can filter locations by distance, cuisine, feature, or price and watch videos from their city or anywhere in the world in near real-time. The app also allows users to post their own video reviews and follow their favorite foodie influencers.
 
+<div class="image-layout">
+  <div class="image-grid grid-3">
+    <Image
+      {...getCloudinaryImageUrl("https://res.cloudinary.com/delsdkwhm/image/upload/v1746013772/Screen_Shot_2022-10-08_at_11.47.19_AM-4_oxw2zc.jpg", 1080, 1080, "fit")}
+      alt="TK"
+    />
+    
+    <Image
+      {...getCloudinaryImageUrl("https://res.cloudinary.com/delsdkwhm/image/upload/v1746013771/Screen_Shot_2022-10-08_at_11.47.19_AM-5_avxadl.jpg", 1080, 1080, "fit")}
+      alt="TK"
+    />
+    
+    <Image
+      {...getCloudinaryImageUrl("https://res.cloudinary.com/delsdkwhm/image/upload/v1746013774/Screen_Shot_2022-10-08_at_12.00.32_PM-9_ohpmwg.jpg", 1080, 1080, "fit")}
+      alt="TK"
+    />
+  </div>
+</div>
+
 ## Tech Stack
 The tech stack for the mobile web app includes React.js as the front-end library, Next.js for hybrid server-side and client-side rendering, Redux for state management, Apollo for data fetching, and TypeScript for type checking. The Atmosfy native app is built with React Native, allowing deployment to the Apple App Store and Google Play from a single code base. Both the mobile web app and native app are built using continuous integration with Bitbucket.
 
 Atmosfy has users in 135 countries and 6,000 cities across the globe. To ensure smooth performance worldwide, deployment is handled by AWS and Cloudfront, leveraging the power of proxy servers and media caching.
+
+<div class="image-layout">
+  <div class="image-grid grid-2">
+    <Image
+      {...getCloudinaryImageUrl("https://res.cloudinary.com/delsdkwhm/image/upload/v1746013774/Screen_Shot_2022-10-08_at_12.00.32_PM-8_wipr1s.jpg", 1080, 1080, "fit")}
+      alt="TK"
+    />
+
+    <Image
+      {...getCloudinaryImageUrl("https://res.cloudinary.com/delsdkwhm/image/upload/v1746013770/Screen_Shot_2022-10-08_at_12.00.32_PM-7_a5uu3n.jpg", 1080, 1080, "fit")}
+      alt="TK"
+    />
+  </div>
+</div>
 

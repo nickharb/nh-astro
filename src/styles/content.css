@@ -130,3 +130,50 @@ img {
   height: 100%;
   border: none;
 }
+
+/* About and CV */
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+/* side by side layout on large screens */
+@media (min-width: 60rem) {
+  .about-content {
+    flex-direction: row;
+    gap: 3rem;
+  }
+}
+
+.image-about {
+  margin-bottom: 2rem;
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 40rem) {
+  .image-about {
+    width: 340px;
+  }
+}
+
+.cv-links {
+  margin-bottom: 2rem;
+}
+
+.cv-links a {
+  font-weight: bold;
+}
+
+.email-button {
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.download-button {
+  margin-bottom: 4rem;
+  display: inline-block;
+}
