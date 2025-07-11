@@ -14,11 +14,12 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  user-select: default;
 }
 
-::selection {
+/* ::selection {
   background-color: var(--color-primary-100);
-}
+} */
 
 /* Use primary color for focus styles */
 
