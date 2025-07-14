@@ -26,14 +26,11 @@ import { getCloudinaryImageUrl } from "../../utils/cloudinary.ts";
 ## Overview
 The Sonnentag Sustainability Display is an interactive touchscreen installation in the lobby of the newly constructed Sonnentag Complex at UW-Eau Claire. Designed to highlight the building’s cutting-edge sustainability features, the display allows visitors to explore an interactive 3D model and view real-time energy and water usage data gathered from the building’s submetering system.
 
-<div class="image-layout">
-  <div class="image-full-width">
-    <Image
-      {...getCloudinaryImageUrl("v1742347654/localhost_5173__8_n6ntuj.png", 1200, 650, "fill", "center")}
-      alt="TK"
-    />
-  </div>
+<div class="video-container">
+  <iframe src="https://player.vimeo.com/video/1101249108?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="UWEC Sonnentag Event Center Sustainability Interactive Display"></iframe>
 </div>
+
+{/* <script src="https://player.vimeo.com/api/player.js"></script> */}
 
 ## The Challenge
 The Sonnentag Complex is one of the most energy-efficient buildings in the region, incorporating geothermal heating, solar energy, and advanced automation systems. The client wanted an engaging, interactive way to educate visitors about these often invisible sustainability efforts. The display needed to integrate a highly detailed 3D model, handle real-time data visualization, and run smoothly on a dedicated on-site computer.
@@ -42,6 +39,13 @@ The Sonnentag Complex is one of the most energy-efficient buildings in the regio
 As lead front-end engineer, I developed the technical architecture and collaborated with Lauren Malkani on design and content strategy. We conducted in-depth research on the building’s construction and refined architectural models from the project’s architects to optimize them for web performance.
 
 <div class="image-layout">
+  <div class="image-full-width">
+    <Image
+      {...getCloudinaryImageUrl("v1742347654/localhost_5173__8_n6ntuj.png", 1200, 650, "fill", "center")}
+      alt="TK"
+    />
+  </div>
+
   <div class="image-full-width">
     <Image
       {...getCloudinaryImageUrl("v1742347675/Screenshot_2024-08-26_at_11.00.21_AM_kfo2jw.png", 1200, 600, "fill", "south")}
